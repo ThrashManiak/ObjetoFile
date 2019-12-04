@@ -14,7 +14,7 @@
     // PhoneGap is ready
     //
     function onDeviceReady() {
-      navigator.notification.alert("PhoneGap is ready!");
+      navigator.notification.alert("PhoneGap Esta Listo!");
         document.getElementById("createFile").addEventListener("click", createFile);
 document.getElementById("writeFile").addEventListener("click", writeFile);
 document.getElementById("readFile").addEventListener("click", readFile);
@@ -47,9 +47,9 @@ document.getElementById("removeFile").addEventListener("click", removeFile);
                alert('Write completed.');
             };
             fileWriter.onerror = function(e) {
-               alert('Write failed: Aun no creas el archivo' + e.toString());
+               alert('Write failed: Aun no haz creado el archivo' + e.toString());
             };
-            var blob = new Blob(['Preuba Luis Armando Ortiz Salinas'], {type: 'text/plain'});
+            var blob = new Blob(['Prueba de datos'], {type: 'text/plain'});
             fileWriter.write(blob);
          }, errorCallback);
       }, errorCallback);
